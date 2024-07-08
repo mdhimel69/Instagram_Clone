@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.HomeFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/insta_logo"
+            />
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/chat"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart_blank"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/message"
+            />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
